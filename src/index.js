@@ -55,6 +55,7 @@ function renderCountry(country) {
 
     if (country.length > 10) {
         onFetchErrorManyMatches();
+        onSearchReset()
     } else if (country.length < 10 && country.length > 1) {
         refs.cardContainer.innerHTML = countryList
     } else if (country.length === 1) {
